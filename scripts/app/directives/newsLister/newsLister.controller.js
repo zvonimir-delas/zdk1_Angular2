@@ -1,7 +1,8 @@
 ﻿angular.module('myApp').controller('newsListerController', function (localStorageHandlerService, $scope) {
-    $scope.getNews = localStorageHandlerService.getNNews();
+    $scope.getNews = localStorageHandlerService.getNews();
     $scope.newsCounter = 6;
-    $scope.incNewsCounter = function () {
+
+    $scope.increaseNewsCounter = function () {
         $scope.newsCounter += 6;
     };
 });

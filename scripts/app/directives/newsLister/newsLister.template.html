@@ -1,8 +1,7 @@
 ﻿<div>LISTER DIREKTIVA</div>
-<div>{{varijabla}}</div>
 <div ng-repeat="news in getNews">
-    <div ng-hide="getNews.indexOf(news)>newsCounter">{{news.id}}</div>
+    <div ng-hide="getNews.indexOf(news) > newsCounter">{{news.id}}</div>
 </div>
 
-<button ng-click="incNewsCounter()"></button>
-<div>{{newsCounter}}</div>
+<button ng-click="increaseNewsCounter()" ng-if="getNews.length > newsCounter">Load more news</button>
+<div ng-show="getNews.length <= newsCounter"><strong>No more news</strong></div>
