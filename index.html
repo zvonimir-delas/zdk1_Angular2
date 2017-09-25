@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Media site</title>
+
+    <script src="scripts/vendor/angular.js"></script>
+    <script src="scripts/vendor/angular-local-storage.js"></script>
+    <script src="scripts/vendor/angular-ui-router.js"></script>
+
+    <script src="scripts/app/app.js"></script>
+    <script src="scripts/app/app.config.js"></script>
+    <script src="scripts/app/directives/newsLister/newsLister.directive.js"></script>
+    <script src="scripts/app/directives/newsLister/newsLister.controller.js"></script>
+    <script src="scripts/app/routes/home/home.route.js"></script>
+    <script src="scripts/app/services/guidService.js"></script>
+    <script src="scripts/app/services/LocalStorageHandlerService.js"></script>
+
+    <base href="/" />
+</head>
+<body>
+    <div ui-view></div>
+
+</body>
+</html>
