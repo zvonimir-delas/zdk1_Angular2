@@ -1,0 +1,4 @@
+﻿<div>COMMENTS</div>
+<div ng-repeat="comment in comments">
+    <div ng-hide="$index>=limitcommentnumber && limitcommentnumber != -1">{{comment.text}}</div>
+    </div>

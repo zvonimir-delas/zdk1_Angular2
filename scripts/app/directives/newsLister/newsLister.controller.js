@@ -18,6 +18,6 @@
     $scope.searchNews = function () {
         var allNews = localStorageHandlerService.getNews();
 
-        return !$scope.searchHome ? null : _.filter(allNews, function (n) { return _.includes(n.id, $scope.searchHome); });
+        return !$scope.searchHome ? null : _.filter(allNews, function (n) { return _.includes(n.title, $scope.searchHome); });
     };
 });

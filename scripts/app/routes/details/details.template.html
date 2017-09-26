@@ -1,3 +1,4 @@
 ﻿<div>{{news.title}}</div>
 <div>{{news.raiting | convertRaiting}}</div>
+<commentlister comments="news.comments" limitcommentnumber="-1"></commentlister>
 <button ng-click="manageFavorite(news)">{{displayFavoriteStatus(news)}} favorite</button>

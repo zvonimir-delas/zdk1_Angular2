@@ -191,7 +191,7 @@
         {
             id: guidService.new(),
             isFavorited: false,
-            title: "",
+            title: "Njemački državljanin skrivio prometnu nesreću",
             raiting: 2,
             comments: [
                 {
