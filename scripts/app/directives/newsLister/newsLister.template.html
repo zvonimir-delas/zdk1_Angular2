@@ -6,3 +6,6 @@
 
 <button ng-click="increaseNewsCounter()" ng-if="getNews.length > newsCounter">Load more news</button>
 <div ng-show="getNews.length <= newsCounter"><strong>No more news</strong></div>
+<h3>Search</h3>
+<input type="text" ng-model="searchHome" /><br />
+<div ng-repeat="news in searchNews()">{{news.id}}</div>

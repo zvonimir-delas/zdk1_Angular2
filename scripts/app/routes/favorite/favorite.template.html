@@ -1,0 +1,13 @@
+﻿<div ng-repeat="news in getNews">
+    <div ng-show="news.isFavorited">
+        {{news.id}}
+        <button ng-click="manageFavorite(news)">{{displayFavoriteStatus(news)}} favorite</button>
+    </div>
+</div>
+<h3>Search</h3>
+<input type="text" ng-model="searchHome" /><br />
+<div ng-repeat="news in searchNews()">
+    <div ng-show="news.isFavorited">
+    {{news.id}}
+        </div>
+</div>

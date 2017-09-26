@@ -6,7 +6,7 @@
     };
 
     this.getNews = function () {
-        return news = localStorageService.get('news_ZD');
+        return localStorageService.get('news_ZD');
     };
 
     this.updateLocalStorage = function (news) {
