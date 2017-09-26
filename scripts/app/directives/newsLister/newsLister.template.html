@@ -1,6 +1,7 @@
 ﻿<div ng-repeat="news in getNews">
-    <div ng-hide="getNews.indexOf(news) > newsCounter">{{news.id}} 
+    <div ng-hide="getNews.indexOf(news) > newsCounter">{{news.title}}
         <button ng-click="manageFavorite(news)">{{displayFavoriteStatus(news)}} favorite</button>
+        <button ui-sref="details({newsId: news.id})">Details</button>
     </div>
 </div>
 
@@ -8,4 +9,4 @@
 <div ng-show="getNews.length <= newsCounter"><strong>No more news</strong></div>
 <h3>Search</h3>
 <input type="text" ng-model="searchHome" /><br />
-<div ng-repeat="news in searchNews()">{{news.id}}</div>
+<div ng-repeat="news in searchNews()">{{news.title}}</div>
