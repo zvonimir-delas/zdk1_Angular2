@@ -5,8 +5,8 @@
             localStorageService.set('news_ZD', startData);
     };
 
-    this.getNews = function () {
-        return localStorageService.get('news_ZD');
+    this.getNews = function (start, end) {
+        return localStorageService.get('news_ZD').splice(start, end);
     };
 
     this.updateLocalStorage = function (news) {
